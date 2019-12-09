@@ -217,15 +217,48 @@ p {
 }
 
 @media (max-width: 630px) {
+  .big-heading {
+    font-size: 2rem;
+  }
+
   .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
     font-size: 1rem;
   }
 
   .title-image {
-    width: 50%;
+    width: 30%;
+  }
+
+  .flavour-text {
+    font-size: 1.2rem;
   }
 
   .definition-lead {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  #definitions h3 {
+    font-size: 1.4rem;
+  }
+
+  #definitions p {
+    font-size: 1rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-image {
+    height: 10px;
+    margin: 50px;
+  }
+
+  .sponsors-title {
+    font-size: 1.5rem;
   }
 }
