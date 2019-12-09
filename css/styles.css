@@ -1,0 +1,176 @@
+body {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+.big-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section {
+  background-color: #2a2939;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+}
+
+/* Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+#title {
+  background-color: #23222f;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+.padding {
+  padding-top: 5%;
+}
+
+.title-image {
+  width: 80%;
+  position: absolute;
+  right: 24%;
+}
+
+/* Search Section */
+.search-section {
+  background-color: #2a2939;
+  color: #fff;
+}
+
+.flavour-text {
+  font-size: 2rem;
+  padding: 2%;
+  color: #adb2bf;
+}
+
+/* Features Section */
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #683f86;
+  margin-bottom: 1rem;
+}
+
+/* Testimonial Section */
+#testimonials {
+  background-color: #2a2939;
+}
+
+.testimonial-text {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  border-radius: 100%;
+  margin: 20px;
+  width: 10%;
+}
+
+/* Sponsors Section */
+#sponsors {
+  background-color: #fff;
+  padding-bottom: 3%;
+}
+
+.sponsors-title {
+  color: #000;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.sponsor-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Footer Section */
+.social-icon {
+  margin: 20px 10px;
+}
+
+#footer-text {
+  color: #adb2bf;
+}
+
+.none {
+  text-decoration: none;
+}
+
+.none:hover {
+  text-decoration: none;
+}
+
+/* Response Queries */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+  }
+}
+
+@media (max-width: 991px) {
+  .title-image {
+    width: 30%;
+  }
+}
