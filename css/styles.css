@@ -172,36 +172,3 @@ p {
     font-size: 1.5rem;
   }
 }
-
-@media (max-width: 991px) {
-  .title-image {
-    width: 80%;
-  }
-}
-
-@media (max-width: 767px) {
-  .title-image {
-    width: 80%;
-  }
-}
-
-@media (max-width: 663px) {
-  .navbar-brand {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 575px) {
-  .title-image {
-    width: 40%;
-  }
-  .sponsor-logo {
-    width: 22%;
-  }
-}
-
-@media (max-width: 527px) {
-  .navbar-brand {
-    font-size: 1rem;
-  }
-}
