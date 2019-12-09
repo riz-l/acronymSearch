@@ -215,3 +215,17 @@ p {
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 630px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .title-image {
+    width: 50%;
+  }
+
+  .definition-lead {
+    font-size: 2rem;
+  }
+}
