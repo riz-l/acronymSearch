@@ -73,9 +73,9 @@ p {
 }
 
 .title-image {
-  width: 80%;
   position: absolute;
   right: 24%;
+  width: 80%;
 }
 
 /* Search Section */
@@ -85,9 +85,45 @@ p {
 }
 
 .flavour-text {
+  color: #adb2bf;
   font-size: 2rem;
   padding: 4%;
-  color: #adb2bf;
+}
+
+.box {
+  background-clip: padding-box;
+  border: 4px solid transparent;
+  border-radius: 4%;
+}
+
+.definition-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.definition-header {
+  font-size: 1.1rem;
+  font-weight: 300;
+  padding-top: 10%;
+  text-transform: uppercase;
+}
+
+.definition-text {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+#definitions {
+  position: relative;
+}
+
+.definition-box {
+  background-color: #3d3c4b;
+  padding: 4.5%;
+}
+
+.definition-icon {
+  color: #755091;
 }
 
 /* Features Section */
@@ -172,3 +208,5 @@ p {
     font-size: 1.5rem;
   }
 }
+
+/* Mobile Responsive */
