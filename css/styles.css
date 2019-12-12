@@ -245,6 +245,12 @@ p {
 }
 
 /* Response Queries */
+@media (max-width: 1229px) {
+  .sponsor-logo {
+    width: 25% !important;
+  }
+}
+
 @media (max-width: 1028px) {
   #title {
     text-align: center;
