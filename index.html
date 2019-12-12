@@ -107,11 +107,167 @@
         <!-- Search Bar-->
         <input
           class="form-control form-control-lg"
+          id="acronymSearchTable"
           type="text"
           placeholder="Search for acronyms..."
         />
+        <div class="container text-left acronym-table">
+          <table class="table table-borderless table-dark table-hover">
+            <caption>
+              List of Defence Industry Acronyms. [ Source:
+              <a
+                href="https://www.gov.uk/government/publications/ministry-of-defence-acronyms-and-abbreviations"
+                >Ministry of Defence acronyms and abbreviations</a
+              >
+              ]
+            </caption>
+            <thead class="table-header">
+              <tr>
+                <th scope="col">
+                  <span class="acronym-tablehead">Acronym</span>
+                </th>
+                <th scope="col">
+                  <span class="definition-tablehead">Definition</span>
+                </th>
+              </tr>
+            </thead>
+            <!--#region Table Data -->
+            <tbody id="acronymSearchContent">
+              <tr>
+                <th scope="row acronym">1ACC</th>
+                <td>No. 1 Air Control Centre</td>
+              </tr>
+              <tr>
+                <th scope="row">1SL</th>
+                <td>First Sea Lord</td>
+              </tr>
+              <tr>
+                <th scope="row">200D</th>
+                <td>Second OOD</td>
+              </tr>
+              <tr>
+                <th scope="row">200W</th>
+                <td>Second OOW</td>
+              </tr>
+              <tr>
+                <th scope="row">2C</th>
+                <td>Second Customer</td>
+              </tr>
+              <tr>
+                <th scope="row">IdM</th>
+                <td>Identity Management</td>
+              </tr>
+              <tr>
+                <th scope="row">IDM</th>
+                <td>Impact Delay Module</td>
+              </tr>
+              <tr>
+                <th scope="row">IDM</th>
+                <td>Improved Data Modem</td>
+              </tr>
+              <tr>
+                <th scope="row">IDM</th>
+                <td>Intrinsically Damped Material</td>
+              </tr>
+              <tr>
+                <th scope="row">IDMS</th>
+                <td>Integrated Document Management System</td>
+              </tr>
+              <tr>
+                <th scope="row">IDMSX</th>
+                <td>Integrated Database Management System</td>
+              </tr>
+              <tr>
+                <th scope="row">NAVMOVE</th>
+                <td>Navigational Movements</td>
+              </tr>
+              <tr>
+                <th scope="row">NAVOBSY</th>
+                <td>Naval Observatory</td>
+              </tr>
+              <tr>
+                <th scope="row">NAVR</th>
+                <td>NAVigation Radar</td>
+              </tr>
+              <tr>
+                <th scope="row">NAVS</th>
+                <td>NAVigation System</td>
+              </tr>
+              <tr>
+                <th scope="row">NAVSEA</th>
+                <td>NAVal SEA Systems Command (US)</td>
+              </tr>
+              <tr>
+                <th scope="row">TODAH</th>
+                <td>Take-Off Distance Available (Helicopter)</td>
+              </tr>
+              <tr>
+                <th scope="row">TOE</th>
+                <td>Table of Organisation and Equipment</td>
+              </tr>
+              <tr>
+                <th scope="row">TOF</th>
+                <td>Tag Out Form</td>
+              </tr>
+              <tr>
+                <th scope="row">TOF</th>
+                <td>Time Of Flight</td>
+              </tr>
+              <tr>
+                <th scope="row">TOGS</th>
+                <td>Thermal Observation and Gunnery Sight</td>
+              </tr>
+              <tr>
+                <th scope="row">TOI</th>
+                <td>Time of Interest</td>
+              </tr>
+              <tr>
+                <th scope="row">TOIL</th>
+                <td>Time Off In Lieu</td>
+              </tr>
+              <tr>
+                <th scope="row">YO</th>
+                <td>Young Officer (under training)</td>
+              </tr>
+              <tr>
+                <th scope="row">YOFB</th>
+                <td>Young Officers Fleet Board</td>
+              </tr>
+              <tr>
+                <th scope="row">YPG</th>
+                <td>Yuma Proving Ground</td>
+              </tr>
+              <tr>
+                <th scope="row">Yr</th>
+                <td>Year</td>
+              </tr>
+              <tr>
+                <th scope="row">YSM</th>
+                <td>Yard Services Manager</td>
+              </tr>
+              <tr>
+                <th scope="row">Z</th>
+                <td>Zone</td>
+              </tr>
+              <tr>
+                <th scope="row">ZEUS</th>
+                <td>Harrier GR5/7 Mission Planning Aid?</td>
+              </tr>
+              <tr>
+                <th scope="row">ZMC</th>
+                <td>Zone Military Commander</td>
+              </tr>
+              <tr>
+                <th scope="row">ZZ</th>
+                <td>Zig-Zag</td>
+              </tr>
+            </tbody>
+            <!--#endregion-->
+          </table>
+        </div>
       </div>
       <!-- Search Content -->
+      <!-- Acronyms of the Day-->
       <div class="container-fluid" id="definitions">
         <h2 class="text-left definition-lead">Acronyms of the Day:</h2>
         <div class="row">
@@ -142,6 +298,7 @@
         </div>
       </div>
     </section>
+
     <!--#endregion-->
 
     <!--#region Features -->
@@ -275,6 +432,25 @@
         <p id="footer-text">&copy; Copyright 2019 Team Defence Information</p>
       </div>
     </footer>
+    <!--#endregion-->
+    <!--#region DataTable Search jQuery -->
+    <script>
+      $(document).ready(function() {
+        $("#acronymSearchTable").on("keyup", function() {
+          var value = $(this)
+            .val()
+            .toLowerCase();
+          $("#acronymSearchContent tr").filter(function() {
+            $(this).toggle(
+              $(this)
+                .text()
+                .toLowerCase()
+                .indexOf(value) > -1
+            );
+          });
+        });
+      });
+    </script>
     <!--#endregion-->
   </body>
 </html>
