@@ -90,6 +90,48 @@ p {
   padding: 4%;
 }
 
+/* Acronym Search Table */
+.acronym-table {
+  padding-top: 6%;
+}
+
+.table-header {
+  background-color: #604277 !important;
+}
+
+.table-dark {
+  background-color: #272634 !important;
+}
+
+.table-dark td,
+.table-dark th,
+.table-dark thead th {
+  border-color: #2a2939 !important;
+}
+
+.table td,
+.table th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 0;
+}
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+  background-color: #3d3c4b;
+}
+
+.acronym-tablehead {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.definition-tablehead {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+/* Acronym of the Day */
 .box {
   background-clip: padding-box;
   border: 4px solid transparent;
@@ -120,6 +162,7 @@ p {
 }
 
 #definitions {
+  padding-top: 0 !important;
   position: relative;
 }
 
@@ -216,7 +259,25 @@ p {
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 767px) {
+  .big-heading {
+    font-size: 2.4rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+
+  .title-image {
+    width: 30%;
+  }
+
+  .flavour-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 663px) {
   .big-heading {
     font-size: 2rem;
   }
@@ -234,7 +295,7 @@ p {
   }
 
   .flavour-text {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .definition-lead {
